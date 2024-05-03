@@ -3,8 +3,8 @@
 
 Vagrant.configure("2") do |config|
   #desktop
-  config.vm.box = "peru/ubuntu-18.04-desktop-amd64"
-  config.vm.box_version = "20180503.01"
+  config.vm.box = "skaary/LinuxMint21"
+  config.vm.box_version = "1"
 
   config.vm.network "private_network", ip: "192.168.33.99"
 
@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "forwarded_port", guest: 8270, host: 8270
   
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "UbuntuDesktop1804_robotframework"
+    vb.name = "Mint_cinnamon_robotframework"
     vb.memory = "4096"
     vb.cpus = 4
   end
