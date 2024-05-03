@@ -8,7 +8,7 @@ sudo apt-get -y install net-tools
 echo "########################"
 echo "# Install python-pip"
 echo "########################"
-sudo apt-get -y install python-pip
+sudo apt -y install python3-pip
 
 echo "########################"
 echo "# PIP Install robotframework"
