@@ -4,7 +4,6 @@
 Vagrant.configure("2") do |config|
   #desktop
   config.vm.box = "skaary/LinuxMint21"
-  config.vm.box_version = "1"
 
   config.vm.network "private_network", ip: "192.168.33.99"
 
