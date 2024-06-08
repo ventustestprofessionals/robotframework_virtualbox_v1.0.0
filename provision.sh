@@ -24,5 +24,11 @@ echo "############################"
 sudo mv /etc/apt/preferences.d/nosnap.pref ~
 sudo apt install snapd
 sudo snap install --classic code
+echo "############################"
+echo "# install robotframework-lsp"
+echo "############################"
+sudo code --install-extension robocorp.robotframework-lsp --no-sandbox --user-data-dir=/root/.vscode
+sudo code folder /vagrantsync/examples --no-sandbox --user-data-dir=/root/.vscode
+
 
 
