@@ -1,6 +1,3 @@
-# -*- mode: ruby -*-
-# vi: set ft=ruby :
-
 Vagrant.configure("2") do |config|
   #desktop
   config.vm.box = "skaary/LinuxMint21"
@@ -22,4 +19,5 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell" do |s|
     s.path = "provision.sh"
   end
+  config.vm.provision "shell", inline: "shutdown -h now"
 end

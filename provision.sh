@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo su - vagrant
 echo "########################"
 echo "# Install net.tools     "
 echo "########################"
@@ -27,8 +28,7 @@ sudo snap install --classic code
 echo "############################"
 echo "# install robotframework-lsp"
 echo "############################"
-sudo code --install-extension robocorp.robotframework-lsp --no-sandbox --user-data-dir=/root/.vscode
-sudo code folder /vagrantsync/examples --no-sandbox --user-data-dir=/root/.vscode
-
-
-
+code --install-extension robocorp.robotframework-lsp --user-data-dir=/vagrant/.vscode
+mkdir -p /vagrant/.vscode
+cp /vagrantsync/robotframework.desktop /home/vagrant/Desktop
+sudo chown -R vagrant:vagrant /vagrant/.vscode
