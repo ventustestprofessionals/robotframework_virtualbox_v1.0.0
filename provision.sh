@@ -28,7 +28,8 @@ sudo snap install --classic code
 echo "############################"
 echo "# install robotframework-lsp"
 echo "############################"
-code --install-extension robocorp.robotframework-lsp --user-data-dir=/vagrant/.vscode
 mkdir -p /vagrant/.vscode
-cp /vagrantsync/robotframework.desktop /home/vagrant/Desktop
 sudo chown -R vagrant:vagrant /vagrant/.vscode
+sudo su - vagrant
+code --install-extension robocorp.robotframework-lsp --user-data-dir=/vagrant/.vscode
+cp /vagrantsync/robotframework.desktop /home/vagrant/Desktop
