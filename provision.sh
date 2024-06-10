@@ -31,7 +31,7 @@ echo "############################"
 cp /vagrantsync/robotframework.desktop /home/vagrant/Desktop
 cp /vagrantsync/install_extensions.desktop /home/vagrant/Desktop
 cp /vagrantsync/robotframework.desktop /home/vagrant/Desktop
-sudo chown -R vagrant:vagrant /home/vagrant/Desktop/install_extensions.desktop
-sudo chown -R vagrant:vagrant /home/vagrant/Desktop/robotframework.desktop
-sudo mkdir /vagrant/.vscode
+sudo chown vagrant:vagrant /home/vagrant/Desktop/install_extensions.desktop
+sudo chown vagrant:vagrant /home/vagrant/Desktop/robotframework.desktop
+sudo mkdir -p /vagrant/.vscode
 sudo chown -R vagrant:vagrant /vagrant/.vscode
