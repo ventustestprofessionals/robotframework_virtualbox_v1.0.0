@@ -29,7 +29,7 @@ echo "############################"
 echo "# install robotframework-lsp"
 echo "############################"
 mkdir -p /vagrant/.vscode
-sudo chown -R vagrant:vagrant /vagrant/.vscode
 sudo su - vagrant
 code --install-extension robocorp.robotframework-lsp --user-data-dir=/vagrant/.vscode
+sudo chown -R vagrant:vagrant /vagrant/.vscode
 cp /vagrantsync/robotframework.desktop /home/vagrant/Desktop
