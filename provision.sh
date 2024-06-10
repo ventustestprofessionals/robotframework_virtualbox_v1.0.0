@@ -26,9 +26,7 @@ sudo mv /etc/apt/preferences.d/nosnap.pref ~
 sudo apt install snapd
 sudo snap install --classic code
 echo "############################"
-echo "# install robotframework-lsp"
+echo "# install shortcut          "
 echo "############################"
-mkdir -p /vagrant/.vscode
-sudo chown -R vagrant:vagrant /vagrant/.vscode
-runuser -l vagrant -c "code --install-extension robocorp.robotframework-lsp --user-data-dir=/vagrant/.vscode"
+cp /vagrantsync/robotframework.desktopinstall extensions.desktop /home/vagrant/Desktop
 cp /vagrantsync/robotframework.desktop /home/vagrant/Desktop

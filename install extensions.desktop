@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=robotframework
+Exec=code --install-extension robocorp.robotframework-lsp --user-data-dir=/vagrant/.vscode
+Comment=start visual studio code with robotframework
+Terminal=true
+Icon=cinnamon-panel-launcher
+Type=Application
+Name[en_US]=install extensions
