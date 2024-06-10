@@ -30,5 +30,5 @@ echo "# install shortcut          "
 echo "############################"
 cp /vagrantsync/robotframework.desktop /home/vagrant/Desktop
 sudo chown -R vagrant:vagrant /vagrant/.vscode
-cp /vagrantsync/robotframework.desktopinstall_extensions.desktop /home/vagrant/Desktop
+cp /vagrantsync/install_extensions.desktop /home/vagrant/Desktop
 cp /vagrantsync/robotframework.desktop /home/vagrant/Desktop
