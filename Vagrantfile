@@ -19,8 +19,5 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell" do |s|
     s.path = "provision.sh"
   end
-
-  config.vm.provision "shell", inline: <<-SHELL
-    shutdown -h now
-  SHELL
+  config.vm.provision "shell", inline: "shutdown -h now"
 end

@@ -28,5 +28,7 @@ sudo snap install --classic code
 echo "############################"
 echo "# install shortcut          "
 echo "############################"
-cp /vagrantsync/robotframework.desktopinstall extensions.desktop /home/vagrant/Desktop
+cp /vagrantsync/robotframework.desktop /home/vagrant/Desktop
+sudo chown -R vagrant:vagrant /vagrant/.vscode
+cp /vagrantsync/robotframework.desktopinstall_extensions.desktop /home/vagrant/Desktop
 cp /vagrantsync/robotframework.desktop /home/vagrant/Desktop
